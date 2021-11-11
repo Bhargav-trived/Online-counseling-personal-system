@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register.html</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Online personal councelling</h1>
+      </header>
+      <form id="chennai.html" action="dashboard.html" >
+        <div class="form-group">
+          <p>Select your Place</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>please select respective place in the city</option>
+            <option value="Anna Nagar">Anna Nagar</option>
+            <option value="Mylapore">Mylapore</option>
+            <option value="Teynampet">Teynampet</option>
+            <option value="Madipakkam">Madipakkam</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="radio" id="slot-1" name="fav_language" value="slot-1">
+          <label for="html" style="display: inline;">12:00</label><br>
+          <input type="radio" id="slot-2" name="fav_language" value="slot-2">
+          <label for="css" style="display: inline;">3:00</label><br>
+          <input type="radio" id="slot-3" name="fav_language" value="slot-3">
+          <label for="css" style="display: inline;">6:00</label><br>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Book your slot
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script>
+    const bookButton = document.querySelector("#submit")
+    bookButton.addEventListener("click", ()=>{
+      alert("Slot booked");
+    })
+  </script>
+</html>
